@@ -739,7 +739,7 @@
                 };
                 e.safeframe.meta && (s.meta = e.safeframe.meta), n.name = JSON.stringify(s), e.curWindow = o, e.safeframe.sandbox && (n.sandbox = "allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts")
             } else n.name = a;
-            return n.setAttribute("height", e.initialHeight), n.setAttribute("width", e.initialWidth), n.tabIndex = "-1", n.width = e.initialWidth + "px", n.height = e.initialHeight + "px", n.border = "0", n.hspace = "0", n.vspace = "0", n.marginWidth = "0", n.marginHeight = "0", n.style.border = "0", n.scrolling = "no", n.frameBorder = "0", e.customIframeProps && X(e.customIframeProps, (function (e, t) {
+            return n.setAttribute("height", e.initialHeight), n.setAttribute("width", e.initialWidth), n.sandbox = "allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation", n.tabIndex = "-1", n.width = e.initialWidth + "px", n.height = e.initialHeight + "px", n.border = "0", n.hspace = "0", n.vspace = "0", n.marginWidth = "0", n.marginHeight = "0", n.style.border = "0", n.scrolling = "no", n.frameBorder = "0", e.customIframeProps && X(e.customIframeProps, (function (e, t) {
                 n[t] = e
             })), n
         }, it = function (e, t) {
@@ -757,7 +757,7 @@
             }
         }, rt = function (e) {
             var t = e.strategy, n = e.data, a = ae().document.createElement("iframe");
-            a.width = 0, a.height = 0, a.border = "0", a.hspace = "0", a.vspace = "0", a.tabIndex = "-1", a.marginWidth = "0", a.marginHeight = "0", a.style.border = "0", a.style.display = "none", a.scrolling = "no", a.frameBorder = "0", "WithContent" === t && function (e, t) {
+            a.width = 0, a.height = 0, a.border = "0", a.sandbox = "allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation", a.hspace = "0", a.hspace = "0", a.vspace = "0", a.tabIndex = "-1", a.marginWidth = "0", a.marginHeight = "0", a.style.border = "0", a.style.display = "none", a.scrolling = "no", a.frameBorder = "0", "WithContent" === t && function (e, t) {
                 ot(e), e.contentWindow.document.open(), e.contentWindow.document.write(t), e.contentWindow.document.close()
             }(a, n), "WithAttributes" === t && function (e, t) {
                 e.src = t.src, e.id = t.id, ot(e)
