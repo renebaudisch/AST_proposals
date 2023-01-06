@@ -1546,7 +1546,7 @@
                         return apntag.refresh(this.targetId)
                     }, apntag.requests.tags[t].setKeywords = function (e, t) {
                         return apntag.setKeywords(this.targetId, e, t)
-                    }, En[n] = typeof En[n] === pa ? [] : En[n], En[n].push(e.targetId), On()[e.targetId] && (apntag.requests.tags[t].showTagCalled = !0), apntag.requests.tags[t]
+                    }, En[n] = typeof En[n] === pa ? [] : En[n], En[n].push(e.targetId), apntag.requests.tags[t]
                 }(e, t);
                 return F("defineTag called for: " + t), apntag.requests && !0 === apntag.requests.utCalled && !apntag.requests.tags[t].utCalled && F("A placement was loaded after ut call was started. These ad calls will not be coordinated"), n
             } catch (e) {
