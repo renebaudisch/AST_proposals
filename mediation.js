@@ -510,7 +510,8 @@
             var e = window.MediationData.host;
             if (this._adType === c.MEDIA_TYPES.NATIVE || this._adType === c.MEDIA_TYPES.VIDEO) t = {
                 name: "mediatedNative",
-                targetId: this._uuid
+                targetId: this._uuid,
+                content: this._currentAd
             }, window.parent.postMessage(JSON.stringify(t), e); else {
                 var t = {name: "resizeAd", targetId: this._uuid, cmd: [this._width, this._height]};
                 !this._expandByCreative && window.parent.postMessage(JSON.stringify(t), e);
