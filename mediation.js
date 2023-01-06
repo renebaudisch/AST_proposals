@@ -519,7 +519,7 @@
             }
         } else this._adType === c.MEDIA_TYPES.NATIVE || this._adType === c.MEDIA_TYPES.VIDEO ? window.parent.apntag && window.parent.apntag.handleMediationBid && window.parent.apntag.handleMediationBid(this._uuid) : window.parent.apntag && window.parent.apntag.resizeAd && (!this._expandByCreative && window.parent.apntag.resizeAd(this._uuid, [this._width, this._height]), this._enableMediationEvents && window.parent.apntag.emitEvent(this._uuid, "adLoaded", this._currentAd));
         var i = this._iframe;
-        s.getBrowser().name !== c.BROWSERS.IE && s.getBrowser().name !== c.BROWSERS.EDGE && (i.src = "about:blank"), this._adType !== c.MEDIA_TYPES.NATIVE && this._adType !== c.MEDIA_TYPES.VIDEO && (this._container.appendChild(i), r.iframeWrite(i, r.getHTMLWithContent(this._content)), r.showFrame(i)), this._adType === c.MEDIA_TYPES.VIDEO && i.parentNode.removeChild(i), this._trackers && s.each(this._trackers, function (e) {
+        s.getBrowser().name !== c.BROWSERS.IE && s.getBrowser().name !== c.BROWSERS.EDGE && (i.src = "about:blank"), this._adType !== c.MEDIA_TYPES.NATIVE && this._adType !== c.MEDIA_TYPES.VIDEO && (this._container.appendChild(i), r.iframeWrite(i, r.getHTMLWithContent(this._content)), r.showFrame(i)), this._adType === c.MEDIA_TYPES.VIDEO && i.parentNode && i.parentNode.removeChild(i), this._trackers && s.each(this._trackers, function (e) {
             e.impression_urls && s.each(e.impression_urls, function (e) {
                 s.doGet(e)
             })
