@@ -137,7 +137,7 @@
             try {
                 if (i.ucTag && i.ucTagData && i.ucTagData.size) {
                     var a = i.ucTagData.size.split("x");
-                    a[0] > 0 && a[1] > 0 && window.parent.apntag && window.parent.apntag.resizeAd && window.parent.apntag.resizeAd(this.apntag_targetId, a)
+                    a[0] > 0 && a[1] > 0 && window.parent.apntag && window.parent.apntag.resizeAd && !this._expandByCreative && window.parent.apntag.resizeAd(this.apntag_targetId, a)
                 }
             } catch (s) {
             }
