@@ -34,7 +34,7 @@
         return Object.prototype.hasOwnProperty.call(e, t)
     }, n.p = "", n(n.s = 1)
 }([function (e) {
-    e.exports = JSON.parse('{"m":{"UT_IFRAME":"utif_","UT_DIV":"div_utif_"},"j":{"WARN":"WARN"},"e":{"DEBUG_MODE":"ast_debug","AST_DONGLE":"ast_dongle","AST_DEBUG_MEMBER":"ast_debug_member","AST_DEBUG_BIDDER":"ast_debug_bidder","AST_TEST":"ast_test","AST_TOOLKIT":"ast_toolkit","AST_OVERRIDE":{"BASE":"ast_override_","DIV":"div","INDEX":"index","TAG_ID":"tag_id","INV_CODE":"inv_code","PUBLISHER_ID":"publisher_id"}},"l":{"UNDEFINED":"undefined","OBJECT":"object","STRING":"string","NUMBER":"number"},"c":{"IE":"msie","OPERA":"opera"},"n":{"LOADED":"loaded","IMPRESSION":"impression"},"f":{"UT_BASE":"/ut/v3","IMPBUS":"ib.adnxs.com","IMPBUS_SIMPLE":"ib.adnxs-simple.com","UT_PREBID":"/ut/v3/prebid"},"q":{"MEDIA_TYPE":"media_type","CREATIVE_ID":"creative_id","AD_TYPE":"ad_type","BANNER":"banner","VIDEO":"video","CONTENT":"content","UUID":"uuid"},"k":{"BANNER":"banner","NATIVE":"native","VIDEO":"video"},"a":{"CREATIVE_ID":"creative_id","NOTIFY":"notify_url","NOAD":"no_ad_url","IMP_URLS":"impression_urls","TRACKERS":"trackers"},"d":{"RTB":"rtb","CSM":"csm","SSM":"ssm"},"b":{"BANNER":"banner","NATIVE":"native","VIDEO":"video"},"i":{"VIDEO_MEDIATION_JS":"//acdn.adnxs-simple.com/video/astMediation/AstMediationManager.js","BANNER_MEDIATION_JS":"//acdn.adnxs-simple.com/ast/mediation/0.53.0/mediation.js","SAFE_FRAME_URL":"//acdn.adnxs-simple.com/ast/safeframe/static/0.53.0/html/safeframe-v2.html","CDN_ORIGIN":"acdn.adnxs-simple.com"},"g":{"REQUEST":"adRequested","AVAILABLE":"adAvailable","LOADED":"adLoaded","LOADED_MEDIATED":"adLoadedMediated","NO_BID_MEDIATED":"adNoBidMediated","REQUEST_FAIL":"adRequestFailure","NO_BID":"adNoBid","DEFAULT":"adDefault","ERROR":"adError","COLLAPSE":"adCollapse","BAD_REQUEST":"adBadRequest"},"p":{"ARRAY":"Array","STRING":"String","FUNC":"Function","NUM":"Number","OBJ":"Object","BOOL":"Boolean"},"o":{"DEFAULT_ZINDEX":3000,"STATUS":{"READY":"ready","NOTIFY_EXPANDED":"expanded","NOTIFY_COLLAPSED":"collapsed","NOTIFY_ERROR":"error","FOCUS_CHANGE":"focus-change","GEOM_UPDATE":"geom-update","CMP":"cmp"}},"h":{"CREATIVE":"creative"}}')
+    e.exports = JSON.parse('{"m":{"UT_IFRAME":"utif_","UT_DIV":"div_utif_"},"j":{"WARN":"WARN"},"e":{"DEBUG_MODE":"ast_debug","AST_DONGLE":"ast_dongle","AST_DEBUG_MEMBER":"ast_debug_member","AST_DEBUG_BIDDER":"ast_debug_bidder","AST_TEST":"ast_test","AST_TOOLKIT":"ast_toolkit","AST_OVERRIDE":{"BASE":"ast_override_","DIV":"div","INDEX":"index","TAG_ID":"tag_id","INV_CODE":"inv_code","PUBLISHER_ID":"publisher_id"}},"l":{"UNDEFINED":"undefined","OBJECT":"object","STRING":"string","NUMBER":"number"},"c":{"IE":"msie","OPERA":"opera"},"n":{"LOADED":"loaded","IMPRESSION":"impression"},"f":{"UT_BASE":"/ut/v3","IMPBUS":"ib.adnxs.com","IMPBUS_SIMPLE":"ib.adnxs-simple.com","UT_PREBID":"/ut/v3/prebid"},"q":{"MEDIA_TYPE":"media_type","CREATIVE_ID":"creative_id","AD_TYPE":"ad_type","BANNER":"banner","VIDEO":"video","CONTENT":"content","UUID":"uuid"},"k":{"BANNER":"banner","NATIVE":"native","VIDEO":"video"},"a":{"CREATIVE_ID":"creative_id","NOTIFY":"notify_url","NOAD":"no_ad_url","IMP_URLS":"impression_urls","TRACKERS":"trackers"},"d":{"RTB":"rtb","CSM":"csm","SSM":"ssm"},"b":{"BANNER":"banner","NATIVE":"native","VIDEO":"video"},"i":{"VIDEO_MEDIATION_JS":"//acdn.adnxs-simple.com/video/astMediation/AstMediationManager.js","BANNER_MEDIATION_JS": "//www.asadcdn.com/adlib/libmodules/extensions/mediation' + (ASCDP.hashMap.extensions.mediation ? "." + ASCDP.hashMap.extensions.mediation : "") + '.js","SAFE_FRAME_URL":"//acdn.adnxs-simple.com/ast/safeframe/static/0.53.0/html/safeframe-v2.html","CDN_ORIGIN":"acdn.adnxs-simple.com"},"g":{"REQUEST":"adRequested","AVAILABLE":"adAvailable","LOADED":"adLoaded","LOADED_MEDIATED":"adLoadedMediated","NO_BID_MEDIATED":"adNoBidMediated","REQUEST_FAIL":"adRequestFailure","NO_BID":"adNoBid","DEFAULT":"adDefault","ERROR":"adError","COLLAPSE":"adCollapse","BAD_REQUEST":"adBadRequest"},"p":{"ARRAY":"Array","STRING":"String","FUNC":"Function","NUM":"Number","OBJ":"Object","BOOL":"Boolean"},"o":{"DEFAULT_ZINDEX":3000,"STATUS":{"READY":"ready","NOTIFY_EXPANDED":"expanded","NOTIFY_COLLAPSED":"collapsed","NOTIFY_ERROR":"error","FOCUS_CHANGE":"focus-change","GEOM_UPDATE":"geom-update","CMP":"cmp"}},"h":{"CREATIVE":"creative"}}')
 }, function (e, t, n) {
     "use strict";
     n.r(t), Object.defineProperty && function () {
@@ -739,7 +739,7 @@
                 };
                 e.safeframe.meta && (s.meta = e.safeframe.meta), n.name = JSON.stringify(s), e.curWindow = o, e.safeframe.sandbox && (n.sandbox = "allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts")
             } else n.name = a;
-            return n.setAttribute("height", e.initialHeight), n.setAttribute("width", e.initialWidth), n.tabIndex = "-1", n.width = e.initialWidth + "px", n.height = e.initialHeight + "px", n.border = "0", n.hspace = "0", n.vspace = "0", n.marginWidth = "0", n.marginHeight = "0", n.style.border = "0", n.scrolling = "no", n.frameBorder = "0", e.customIframeProps && X(e.customIframeProps, (function (e, t) {
+            return n.setAttribute("height", e.initialHeight), n.setAttribute("width", e.initialWidth), n.sandbox = "allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation", n.tabIndex = "-1", n.width = e.initialWidth + "px", n.height = e.initialHeight + "px", n.border = "0", n.hspace = "0", n.vspace = "0", n.marginWidth = "0", n.marginHeight = "0", n.style.border = "0", n.scrolling = "no", n.frameBorder = "0", e.customIframeProps && X(e.customIframeProps, (function (e, t) {
                 n[t] = e
             })), n
         }, it = function (e, t) {
@@ -757,7 +757,7 @@
             }
         }, rt = function (e) {
             var t = e.strategy, n = e.data, a = ae().document.createElement("iframe");
-            a.width = 0, a.height = 0, a.border = "0", a.hspace = "0", a.vspace = "0", a.tabIndex = "-1", a.marginWidth = "0", a.marginHeight = "0", a.style.border = "0", a.style.display = "none", a.scrolling = "no", a.frameBorder = "0", "WithContent" === t && function (e, t) {
+            a.width = 0, a.height = 0, a.border = "0", a.sandbox = "allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation", a.hspace = "0", a.vspace = "0", a.tabIndex = "-1", a.marginWidth = "0", a.marginHeight = "0", a.style.border = "0", a.style.display = "none", a.scrolling = "no", a.frameBorder = "0", "WithContent" === t && function (e, t) {
                 ot(e), e.contentWindow.document.open(), e.contentWindow.document.write(t), e.contentWindow.document.close()
             }(a, n), "WithAttributes" === t && function (e, t) {
                 e.src = t.src, e.id = t.id, ot(e)
@@ -1546,7 +1546,7 @@
                         return apntag.refresh(this.targetId)
                     }, apntag.requests.tags[t].setKeywords = function (e, t) {
                         return apntag.setKeywords(this.targetId, e, t)
-                    }, En[n] = typeof En[n] === pa ? [] : En[n], En[n].push(e.targetId), On()[e.targetId] && (apntag.requests.tags[t].showTagCalled = !0), apntag.requests.tags[t]
+                    }, En[n] = typeof En[n] === pa ? [] : En[n], En[n].push(e.targetId), apntag.requests.tags[t]
                 }(e, t);
                 return F("defineTag called for: " + t), apntag.requests && !0 === apntag.requests.utCalled && !apntag.requests.tags[t].utCalled && F("A placement was loaded after ut call was started. These ad calls will not be coordinated"), n
             } catch (e) {
@@ -1698,8 +1698,9 @@
                         var n = Kn(e, t);
                         return 0 === Xn && (Xn = setInterval(na, 1e3)), n
                     }(e.targetId, r)), i = at(e, c);
-                    var h = ht.getInstance(), y = {};
-                    if (y.iframe = i, y.originalWidth = e.initialWidth, y.originalHeight = e.initialHeight, h.add(e.targetId, y), n[e.targetId] = i, typeof l !== qa && window.document.getElementById(l.id) ? r.replaceChild(i, l) : r.appendChild(i), e.displayed = !0, window.document.body) try {
+                    var h = ht.getInstance(), y = {}, i2 = document.createElement('div');
+                    i2.append(i);
+                    if (y.iframe = i, y.originalWidth = e.initialWidth, y.originalHeight = e.initialHeight, h.add(e.targetId, y), n[e.targetId] = i, typeof l !== qa && window.document.getElementById(l.id) ? r.replaceChild(i2, l) : r.appendChild(i2), e.displayed = !0, window.document.body) try {
                         !function (e, t, n) {
                             var a = _a(), i = e.curWindow || window,
                                 r = e.wcElement ? e.wcElement : i.document.getElementById(e.targetId);
@@ -2075,11 +2076,11 @@
             var n = e.data, a = new XMLHttpRequest;
             a.onload = function () {
                 var e = null;
-                if (200 === a.status) try {
-                    e = JSON.parse(a.responseText), apntag.handleCb(e, n)
+                if (200 === this.status) try {
+                    e = JSON.parse(this.responseText), apntag.handleCb(e, n)
                 } catch (e) {
-                    z("failed to parse ad response from impbus: " + e.message), $a(e.message, t, a.status, p.g.REQUEST_FAIL, e)
-                } else z(a.status + " : " + a.statusText), $a(a.statusText, t, a.status, p.g.REQUEST_FAIL)
+                    z("failed to parse ad response from impbus: " + e.message), $a(e.message, t, this.status, p.g.REQUEST_FAIL, e)
+                } else z(this.status + " : " + this.statusText), $a(this.statusText, t, this.status, p.g.REQUEST_FAIL)
             }, a.onerror = function (n) {
                 var a = n.target.status;
                 $a("Error contacting impbus endpoint: " + e.url + " http response code:" + a, t, a, p.g.REQUEST_FAIL)
