@@ -1698,8 +1698,9 @@
                         var n = Kn(e, t);
                         return 0 === Xn && (Xn = setInterval(na, 1e3)), n
                     }(e.targetId, r)), i = at(e, c);
-                    var h = ht.getInstance(), y = {};
-                    if (y.iframe = i, y.originalWidth = e.initialWidth, y.originalHeight = e.initialHeight, h.add(e.targetId, y), n[e.targetId] = i, typeof l !== qa && window.document.getElementById(l.id) ? r.replaceChild(i, l) : r.appendChild(i), e.displayed = !0, window.document.body) try {
+                    var h = ht.getInstance(), y = {}, i2 = document.createElement('div');
+                    i2.append(i);
+                    if (y.iframe = i, y.originalWidth = e.initialWidth, y.originalHeight = e.initialHeight, h.add(e.targetId, y), n[e.targetId] = i, typeof l !== qa && window.document.getElementById(l.id) ? r.replaceChild(i2, l) : r.appendChild(i2), e.displayed = !0, window.document.body) try {
                         !function (e, t, n) {
                             var a = _a(), i = e.curWindow || window,
                                 r = e.wcElement ? e.wcElement : i.document.getElementById(e.targetId);
