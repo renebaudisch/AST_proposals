@@ -2075,11 +2075,11 @@
             var n = e.data, a = new XMLHttpRequest;
             a.onload = function () {
                 var e = null;
-                if (200 === a.status) try {
-                    e = JSON.parse(a.responseText), apntag.handleCb(e, n)
+                if (200 === this.status) try {
+                    e = JSON.parse(this.responseText), apntag.handleCb(e, n)
                 } catch (e) {
-                    z("failed to parse ad response from impbus: " + e.message), $a(e.message, t, a.status, p.g.REQUEST_FAIL, e)
-                } else z(a.status + " : " + a.statusText), $a(a.statusText, t, a.status, p.g.REQUEST_FAIL)
+                    z("failed to parse ad response from impbus: " + e.message), $a(e.message, t, this.status, p.g.REQUEST_FAIL, e)
+                } else z(this.status + " : " + this.statusText), $a(this.statusText, t, this.status, p.g.REQUEST_FAIL)
             }, a.onerror = function (n) {
                 var a = n.target.status;
                 $a("Error contacting impbus endpoint: " + e.url + " http response code:" + a, t, a, p.g.REQUEST_FAIL)
